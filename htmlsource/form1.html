@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        폼 태그
+        form : 사용자가 뭔가를 입력하는 형태로 만들어진 모든 것
+        <form method="보내는 방법">
+            method : get : 폼 안의 데이터들을 주소줄에 보여주면서 보내 것 인가?
+                     post :  폼 안의 데이터들을 주소줄에 안보여주면서(감싸서) 보낼 것인가?
+                     메소드 속성을 사용하지 않으면 get 방식으로 전송됨
+                     action : 폼 안의 데이터를 전송할 주소(페이지)
+                              백앤드 프로그램이 들어올 부분
+
+                     1. 폼 요소
+                     1) text 형태 데이터 입력 : <input type='text' name='이름지정'
+     -->
+    <form method="get" action="link2.html">
+      <!--laber안 for이름과 input안 id이름이 같으면
+            이름 및 나이 누르면 텍스트박스에 포커스
+        -->
+      <p>
+        <label for="name">이름</label>
+        <input type="text" name="name" id="name" />
+      </p>
+      <p>
+        <label for="age">나이</label>
+        <input type="text" name="age" id="age" />
+      </p>
+      <p>
+        <!--laber안 input넣기
+            전화번호 누르면 텍스트박스에 포커스
+        -->
+        <label
+          >전화번호
+          <input type="text" name="tel" />
+        </label>
+      </p>
+      <p>
+        <!-- submit : 현재 폼을  action 지정한 곳으로 전송 역할 -->
+        <input type="submit" value="전송" />
+      </p>
+    </form>
+    <!-- http://192.168.0.45:5500/htmlsource/link2.html?name=정대만
+         http://192.168.0.45:5500/htmlsource/link2.html?name=정대만&age=19
+    -->
+  </body>
+</html>
