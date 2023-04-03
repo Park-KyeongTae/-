@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>선택자</title>
+    <style>
+      /* 아이디명이 color 인 요소들의 색상 blue */
+      #color {
+        color: blue;
+      }
+      /* 아이디명이 line 인 요소들은 밑줄 */
+      #line {
+        color: blue;
+        text-decoration: underline;
+      }
+      /* 아이디명이 weight 인 요소들은 굴게 */
+      #weight {
+        color: blue;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        스타일 지정을 위해 앞 쪽에 쓰는 선택자는 다양하게 존재함
+        1) 태그 선택자
+        2) 전체 선택자
+        3) 클래스 선택자
+        4) 아이디 선택자 : 한 페이지 내에서 중복 불가(에러는 나지 않음)
+     -->
+    <div>
+      <h1 id="title">css 기본 문법</h1>
+      <h2 class="color">아이디 선택자</h2>
+    </div>
+    <ul>
+      <!-- li.클래스명 하면 자동완성 -->
+      <li id="color">LIst Item1</li>
+      <li id="line">LIst Item2</li>
+      <li id="weight">LIst Item3</li>
+    </ul>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit odio quas
+      dolorum sit ea qui commodi minus atque, exercitationem sed totam
+      doloribus, itaque porro obcaecati cupiditate! Voluptatem aspernatur culpa
+      laudantium?
+    </p>
+  </body>
+</html>
