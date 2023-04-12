@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="header" class="header">Header 1</h1>
+    <h2 id="header2" class="header">Header 2</h2>
+    <div id="top">
+      <div id="nested">내용</div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+        quisquam! Labore non sint provident ea ullam asperiores cumque, omnis
+        necessitatibus autem! Numquam incidunt nihil qui non consequuntur minima
+        quos nulla.
+      </p>
+    </div>
+    <script>
+      const h1 = document.querySelector("h1"); // 찾아오기
+      // setAttribute() : 속성 세팅 , removeAttribute() : 속성 삭제
+      h1.removeAttribute("class"); // 제거할 속성명
+      // h2 id 속성 제거
+      const h2 = document.querySelector("h2"); // 찾아오기
+      h2.removeAttribute("id"); // 제거할 속성명
+      h2.innerHTML = ""; // 텍스트 불러와서 아무것도 안주면 텍스트 삭제
+    </script>
+  </body>
+</html>
